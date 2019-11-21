@@ -1,8 +1,4 @@
 
-// note that the foreign key values are hard-coded...
-// you have to make sure that the records in the related tables
-// have these id's, or this insert() will fail!
-
 exports.seed = function(knex, Promise) {
   return knex('zoo_animals').insert([
     { zoo_id: 1, animal_id: 1 },
